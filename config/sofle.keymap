@@ -28,7 +28,9 @@
                            &none             &none        &kp BACKSPACE    &kp SPACE  &kp LCTRL    &kp RET  &kp LEFT_SHIFT  &none    &kp LEFT_GUI  &none
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_AC_SCROLL_DOWN C_AC_SCROLL_UP>,
+                <&inc_dec_kp PG_UP PG_DN>;
         };
 
         lower_layer {
