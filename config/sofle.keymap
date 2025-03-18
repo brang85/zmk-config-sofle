@@ -1,17 +1,19 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
+#define default 0
+
 / {
     keymap {
         compatible = "zmk,keymap";
 
-        layer_0 {
+        default {
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3  &kp N4    &kp N5                           &kp N6     &kp N7  &kp N8        &kp N9   &kp N0    &kp DEL
-&kp TAB    &kp Q   &kp W   &kp E   &kp R     &kp T                            &kp Y      &kp U   &kp I         &kp O    &kp P     &kp BSLH
-&kp LALT   &kp A   &kp S   &kp D   &kp F     &kp G                            &kp H      &kp J   &kp K         &kp L    &kp SEMI  &kp SQT
-&kp EQUAL  &kp Z   &kp X   &kp C   &kp V     &kp B      &trans       &trans   &kp N      &kp M   &kp COMMA     &kp DOT  &kp FSLH  &kp MINUS
-                   &trans  &trans  &kp BSPC  &kp SPACE  &kp LCTRL    &kp RET  &kp LSHFT  &trans  &kp LEFT_GUI  &trans
+&kp ESC    &kp N1  &mt F2 NUMBER_2  &kp N3  &mt F4 NUMBER_4  &kp N5                           &kp N6     &kp N7  &kp N8        &kp N9   &kp N0    &kp DEL
+&kp TAB    &kp Q   &kp W            &kp E   &kp R            &kp T                            &kp Y      &kp U   &kp I         &kp O    &kp P     &kp BSLH
+&kp LALT   &kp A   &kp S            &kp D   &kp F            &kp G                            &kp H      &kp J   &kp K         &kp L    &kp SEMI  &kp SQT
+&kp EQUAL  &kp Z   &kp X            &kp C   &kp V            &kp B      &trans       &trans   &kp N      &kp M   &kp COMMA     &kp DOT  &kp FSLH  &kp MINUS
+                   &trans           &trans  &kp BSPC         &kp SPACE  &kp LCTRL    &kp RET  &kp LSHFT  &trans  &kp LEFT_GUI  &trans
             >;
         };
     };
