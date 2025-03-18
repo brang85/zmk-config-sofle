@@ -32,7 +32,7 @@
                 <&inc_dec_kp C_AC_SCROLL_DOWN C_AC_SCROLL_UP>,
                 <&inc_dec_kp PG_UP PG_DN>;
         };
-
+        
         RNav {
             bindings = <
 &to 0   &trans  &trans     &trans     &trans  &trans                    &trans  &trans     &trans    &trans     &trans  &trans
@@ -41,6 +41,7 @@
 &trans  &trans  &trans     &trans     &trans  &trans  &trans    &trans  &trans  &kp HOME   &trans    &kp END    &trans  &trans
                 &trans     &trans     &trans  &trans  &trans    &trans  &trans  &trans     &trans    &trans
             >;
+        };
 
         raise_layer {
 // ------------------------------------------------------------------------------------------------------------
