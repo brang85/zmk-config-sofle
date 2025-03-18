@@ -1,7 +1,21 @@
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/rgb.h>
 
-#define default 0
+&caps_word {
+    continue-list = <UNDERSCORE MINUS>;
+};
+
+&led_strip {
+    chain-length = <35>;
+};
+
+&left_encoder {
+    resolution = <2>;
+};
 
 / {
     keymap {
@@ -15,6 +29,8 @@
 &kp EQUAL  &kp Z   &kp X            &kp C   &kp V            &kp B      &trans       &trans   &kp N      &kp M   &kp COMMA     &kp DOT  &kp FSLH  &kp MINUS
                    &trans           &trans  &kp BSPC         &kp SPACE  &kp LCTRL    &kp RET  &kp LSHFT  &trans  &kp LEFT_GUI  &trans
             >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+
         };
     };
 };
