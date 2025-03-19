@@ -19,7 +19,7 @@
         snip: snip {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LEFT_GUI) &kp S>, <&macro_tap>;
+            bindings = <&macro_tap &kp LG(LS(S))>;
 
             label = "SNIP";
         };
