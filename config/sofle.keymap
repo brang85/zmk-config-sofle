@@ -32,6 +32,7 @@
             bindings = <&kp LC(F)>;
             key-positions = <28 29>;
         };
+    };
 
     keymap {
         compatible = "zmk,keymap";
